@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jogo da Memória </title>
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/game.css">
+    <!--JS-->
+    <script src="Scripts/main.js" defer></script>
+</head>
+
+
+
+<body>
+    <template id = "cardTemplate">
+        <div class="flip-card">
+            <div class = "flip-card-inner">
+                <div class="flip-card-front"></div>
+                <div class="flip-card-back"><img src="Suicune.jpeg"></div>
+            </div>
+        </div>
+    </template>
+
+    <div id="board" class="hidden"></div>
+
+
+    <div id = "menu">
+        <h1> Jogo da Memoria </h1>
+        <div class = "container">
+           <select name = "numCards" id = "numCards"></select>
+           <button id="start"> Start </button>
+        </div>
+    </div>
+</body>
+</html>
